@@ -4,7 +4,6 @@ body {
 }
 .nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin: 0px 2%;
   }
@@ -20,7 +19,6 @@ body {
 .navMenu {
     width: 50%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Poppins', sans-serif;
@@ -36,8 +34,8 @@ section {
     background-repeat: no-repeat;
     margin: 0px auto;
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     width: 70%;
     min-height: 500px;
     height: 650px;
@@ -46,33 +44,14 @@ section {
     border-radius: 15px;
 }
 
-.heroTitle {
-    justify-content: center;
-    align-content: center;
-}
-
-.giraffe {
-    height: 500px;
-    justify-content: center;
-    align-content: center;
-}
-
-.giraffe img {
-    width: 580px;
-    justify-content: center;
-    align-content: center;
-}
-
 .circle {
     display: flex;
-    margin-left:10px;
-    margin-top: 5px;
     justify-content:space-around ;
-    flex-direction: row;
-    width: 7%;
+    width: 5%;
     padding: 10px;;
 }
 .Red {
+    display: block;
     height: 10px;
     width: 10px;
     background-color: red;
@@ -81,6 +60,7 @@ section {
 }
 
 .Yellow {
+    display: block;
     height: 10px;
     width: 10px;
     background-color: yellow;
@@ -89,6 +69,7 @@ section {
 }
 
 .Green {
+    display: block;
     height: 10px;
     width: 10px;
     background-color: green;
@@ -97,42 +78,62 @@ section {
 }
 
 .heroTitle {
-    margin-left:16%;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    text-align: center;
+}
+
+.giraffe {
+    display: flex;
     justify-content: center;
     align-content: center;
-    text-align: center;
+    padding-bottom: 1rem;
+    max-height: 450px;
+
+}
+
+.giraffe img {
+    max-width: 500px;
+    max-height: 1000px;
+    object-fit: cover;
 }
 
 /* Typography CSS */
 h1 {
-    height:0;
-    font-size: 50px;
+    font-size: 3vw;
+    margin: 0;
     font-family:'Twinkle Star', cursive;
 }
 
 h2 {
-    height:0%;
-    font-size:90px;
+    font-size: 6vw;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 /* footer CSS */
-.footer {
-    width: 60px;
-    position: fixed;
-    justify-content: center;
-    align-content: center;
+footer {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    height: 50px;
+}
+  
+.footer-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
-.icon1 {
-    width: 50px;
-} 
-.icon2 {
-    width: 35px;
-} 
-.icon3 {
-    width: 5px;
-} 
+.footer-wrapper img:hover {
+    cursor: pointer;
+    transform: scale(120%);
+  }
