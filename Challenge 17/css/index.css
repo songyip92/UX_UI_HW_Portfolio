@@ -9,7 +9,7 @@ body {
     margin: 0px 2%;
   }
 
- .logo {
+.logo {
     width: 25%;
  } 
 .logo img {
@@ -44,6 +44,23 @@ section {
     background-color: #EFEADD;
     border: 1px solid black;
     border-radius: 15px;
+}
+
+.heroTitle {
+    justify-content: center;
+    align-content: center;
+}
+
+.giraffe {
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+}
+
+.giraffe img {
+    width: 580px;
+    justify-content: center;
+    align-content: center;
 }
 
 .circle {
@@ -87,10 +104,6 @@ section {
     text-align: center;
 }
 
-.giraffe img {
-    width: 460px;
-}
-
 /* Typography CSS */
 h1 {
     height:0;
@@ -106,13 +119,20 @@ h2 {
 
 /* footer CSS */
 .footer {
-    width: 10%;
+    width: 60px;
     position: fixed;
     justify-content: center;
     align-content: center;
-
+    display: flex;
+    flex-direction: row;
 }
 
-.footer image {
-    justify-content: center;
+.icon1 {
+    width: 50px;
+} 
+.icon2 {
+    width: 35px;
+} 
+.icon3 {
+    width: 5px;
 } 
